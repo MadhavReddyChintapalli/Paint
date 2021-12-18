@@ -1,0 +1,33 @@
+.toolbar {
+  box-sizing: border-box;
+  width: 50px;
+//   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 2em;
+  transition: all 0.2s;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+
+  &:hover {
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+    transition: all 0.1s;
+  }
+
+  &:active {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+
+  &.selected {
+    background-color: gray;
+  }
+}
